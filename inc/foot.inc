@@ -8,15 +8,15 @@
             </address>
           </div>
         </div>
-        <div class="row my-3">
+        <div class="row">
           <div class="col-12">
-            <nav class="link-list">
-              <a href="<?= $pages->get("/")->url ?>">Home</a>
+            <nav class="my-md-4">
+              <a class='d-block d-md-inline my-2' href="<?= $pages->get("/")->url ?>">Home</a>
               <?php foreach ($pages->get("/")->children as $link) {
                 if ($link->template->name !== "parent_link") {
-                  echo "<a href='$link->url' title='$link->title'>$link->title</a>";
+                  echo "<a class='d-block d-md-inline mb-2 ml-md-3' href='$link->url' title='$link->title'>$link->title</a>";
                 } else {
-                  echo "<a href='{$link->child->url}' title='$link->title'>$link->title</a>";
+                  echo "<a class='d-block d-md-inline mb-2 ml-md-3' href='{$link->child->url}' title='$link->title'>$link->title</a>";
                 }
               } ?>
             </nav>
