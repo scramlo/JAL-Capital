@@ -7,10 +7,10 @@
         </div>
       </div>
       <div class="row">
-        <section class="col-3">
+        <section class="col-12 col-md-3 text-center mb-3 mb-md-0">
           <img class="team-member-image" src="<?= $team_member->image_left->size(300,350)->url ?>" alt="Image of <?= $page->team_member_name ?>">
         </section>
-        <section class="col-9">
+        <section class="col-12 col-md-9">
           <div class="rich-text">
             <?= $team_member->rich_text ?>
           </div>
