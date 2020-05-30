@@ -231,7 +231,7 @@
             <a data-mobile-dropdown-id="<?= $link->id ?>"class="mobile-nav-dropdown" title="<?= $link->title ?>"><?= $link->title ?> <i class="fa fa-caret-down"></i></a>
             <div data-open="false"  id="mobile-nav-panel-<?= $link->id ?>" class="mobile-nav-dropdown-panel">
               <?php foreach ($link->children as $child_link): ?>
-                <a title="<?= $child_link->title ?>" href="<?= $child_link->child->url ?>"><?= $child_link->title ?></a>
+                <a title="<?= $child_link->title ?>" href="<?= $child_link->url ?>"><?= $child_link->title ?></a>
               <?php endforeach; ?>
             </div>
           <?php endif; ?>
